@@ -1,0 +1,61 @@
+{
+    "name": "Tacho",
+    "description": "A tacho model",
+    "plural": "Tachos",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "organization": "String",
+    "id":{
+        "type":"String",
+        "id": true
+    },
+    "relationId": "String",
+    "cardNumber": "String",
+    "activity": [
+        {
+            "date": "Date",
+            "activityChangeInfo": [
+                {
+                    "type": "String",
+                    "slot": "String",
+                    "driverSystem": "String",
+                    "cardStatus": "String",
+                    "toTime": "String"
+                }
+            ],
+            "distance": "Number",
+            "files": [
+                {
+                    "namefile": "String"
+                }
+            ],
+            "vehicles": [
+                {
+                    "registration": "String",
+                    "distance": "Number",
+                    "fromDate": "Date",
+                    "toDate": "Date"
+                }
+            ],
+            "places": [
+                {
+                    "placeBegin": "String",
+                    "placeEnd": "String",
+                    "fromDate": "Date",
+                    "toDate": "Date"
+                }
+
+            ]
+        }
+    ],
+    "properties": {
+
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}
